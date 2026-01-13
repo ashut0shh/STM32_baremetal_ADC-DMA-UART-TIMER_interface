@@ -1,0 +1,16 @@
+1. Timer Configuration (100Hz)
+  The system clock is configured at 16 MHz. To achieve a 100Hz frequency:
+  Prescaler (PSC): $1599$ (Divides clock by $1600 \rightarrow 10$ kHz)
+  Auto-Reload (ARR): $99$ (Divides $10$ kHz by $100 \rightarrow 100$ Hz)
+  MMS (Master Mode Selection): Set to Update Event to act as a Trigger Output (TRGO) for the ADC.
+2. ADC & DMA:
+  ADC1: Configured in 12-bit mode, triggered by the rising edge of TIM2_TRGO.
+  DMA2 Stream 0: Operates in Circular Mode to continuously transfer the ADC Data Register (DR) to a memory buffer.
+  Interrupts: A DMA Transfer Complete Interrupt triggers the UART transmission logic
+3. UART Transmission
+  Arduino UNO used as a usb to ttl bridge 
+  Baud rate=115200
+4. Microcontroller: STM32F411CEU6 (Black Pill).
+5. Debugger: ST-LINK V2.
+6. The following results were verified using STM32CubeIDE Live Expressions and console
+7. 
