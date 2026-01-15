@@ -4,6 +4,7 @@ A 100 Hz hardware timer triggers the ADC conversion. The ADC result is transferr
 This project was developed as part of an assignment from Unmanned Dynamics (via Internshala).
 
 
+
 Features:
 100 Hz timer-based ADC triggering
 External trigger–based ADC conversion
