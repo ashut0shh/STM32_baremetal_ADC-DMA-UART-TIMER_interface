@@ -1,0 +1,1 @@
+ST-LINK (3.3,gnd,clk,data)-- STM32f401ccux(tx)--(tx)uno-- (usb)serial monitor
