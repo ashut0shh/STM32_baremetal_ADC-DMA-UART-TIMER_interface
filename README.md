@@ -105,6 +105,7 @@ ADC values update continuously at 100 Hz
 ADC readings:
 
     4095 when connected to 3.3 V
+    otherwise 600-1000
     0 when connected to GND
     
 Smooth variation for intermediate voltages
