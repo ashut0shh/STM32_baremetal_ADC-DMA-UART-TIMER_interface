@@ -1,4 +1,4 @@
-#**Overview:**
+#Overview:
 
 This project implements a timer-triggered ADC acquisition system on an STM32 Black Pill (STM32F4 series) microcontroller using bare-metal CMSIS programming.
 
