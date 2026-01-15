@@ -23,7 +23,9 @@ Jumper wires
 
 Software Tools:
 STM32CubeIDE
+
 CMSIS (no HAL)
+
 STM32F4 Reference Manual
 
 
