@@ -8,7 +8,7 @@ This project was developed as part of an assignment from Unmanned Dynamics (via 
 
 
 
-**Features:**
+# Features:
 
 100 Hz timer-based ADC triggering
 
@@ -25,7 +25,7 @@ Debugged using live expressions and register inspection
 No HAL abstraction layers used
 
 
-**Hardware Used:**
+# Hardware Used:
 
 STM32 Black Pill (STM32F4 series)
 
@@ -38,7 +38,7 @@ Jumper wires
 
 
 
-**Software Tools:**
+# Software Tools:
 
 STM32CubeIDE
 
@@ -47,7 +47,7 @@ CMSIS (no HAL)
 STM32F4 Reference Manual
 
 
-**ADC Configuration:**
+# ADC Configuration:
 Single-channel ADC mode
 
 12-bit resolution
@@ -58,7 +58,7 @@ Right-aligned data
 
 ADC data register connected to DMA
 
-**Timer Configuration:**
+# Timer Configuration:
 
 Timer configured to generate an update event at 100 Hz
 
@@ -67,7 +67,7 @@ Prescaler (PSC) and Auto-Reload Register (ARR) calculated from system clock
 Timer update event configured as TRGO to trigger ADC
 
 
-**DMA Configuration:**
+# DMA Configuration:
 
 Peripheral-to-memory mode
 
@@ -78,7 +78,7 @@ Memory buffer as destination
 DMA transfer complete interrupt enabled
 
 
-**UART Configuration:**
+# UART Configuration:
 
 UART used to transmit ADC values
 
@@ -87,7 +87,7 @@ Output displayed in STM32CubeIDE console and PuTTY
 Arduino Uno used as USB-to-Serial bridge due to unavailability of USB-to-TTL converter
 
 
-**Debugging Strategy:**
+# Debugging Strategy:
 
 Used Live Expressions in STM32CubeIDE to monitor ADC values,Timer counters
 
@@ -98,7 +98,7 @@ Inspected Special Function Registers (SFRs) by pausing execution to confirm corr
 UART debugging added after hardware workaround
 
 
-**Results:**
+# Results:
 
 ADC values update continuously at 100 Hz
 
